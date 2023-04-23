@@ -30,7 +30,7 @@ Every release of Helm provides binary releases for a variety of OSes. These bina
 Download your desired version
 ```
 Installation and Upgrading
-Download Helm v3.11.3. The common platform binaries are here:
+Download Helm v3.11.3. The common platform binaries are here: https://github.com/helm/helm/releases
 
 MacOS amd64 (checksum / 9d029df37664b50e427442a600e4e065fa75fd74dac996c831ac68359654b2c4)
 MacOS arm64 (checksum / 267e4d50b68e8854b9cc44517da9ab2f47dec39787fed9f7eba42080d61ac7f8)
