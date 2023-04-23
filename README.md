@@ -7,7 +7,7 @@ In addition, Helm also maintains a versioned history of every Chart (Application
 
 Similarly, if you need to upgrade a chart, you can simply call "helm upgrade".
 
-## what is a Helm Chart? 
+## What is a Helm Chart? 
 In Helm, a chart is basically a collection of manifest files organized in a specific directory structure that describe a related Kubernetes resource. There are two main components to a chart: templates and values. These templates and values go through a template rendering engine, producing a manifest that is easily digestible by Kubernetes. 
 
 Helm uses Charts to pack all the required K8s components for an application to deploy, run, and scale. 
