@@ -77,7 +77,7 @@ To uninstall app
 helm uninstall app # uninstall the application
 ```
 To change the version
-``
+```
 vi springapp/value.yml # to see if you have the right repository (image)
 Example: Assign tag: latest
 ```
