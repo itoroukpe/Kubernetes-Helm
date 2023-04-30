@@ -55,8 +55,7 @@ sudo apt-get install helm
    - templates
    - Chart.yaml
 
-
- values.yaml: you can change
+values.yaml: you can change
         - replicaCount
         - service account: false
         - service: CusterIP
@@ -68,6 +67,7 @@ template/Deployment.yml
      - all are variables
      
 To deploy the application
+
 ```
       helm install appName chartsName 
       $ helm install app springapp
@@ -113,7 +113,7 @@ helm show values nginx/nginx-ingress   # show values/varaiables
   
 helm Commands:
 https://helm.sh/docs/helm/helm_dependency_list/
--------
+
 helm:
 
 The Helm package manager for Kubernetes.
@@ -122,12 +122,12 @@ Synopsis
 The Kubernetes package manager
 
 Common actions for Helm:
-
+```
 helm search: search for charts
 helm pull: download a chart to your local directory to view
 helm install: upload the chart to Kubernetes
 helm list: list releases of charts
-----------------
+```
 helm create
 create a new chart with the given name
 
@@ -143,6 +143,7 @@ foo/
 ├── charts/       # Charts that this chart depends on
 └── templates/    # The template files
     └── tests/    # The test files
+    
 'helm create' takes a path for an argument. If directories in the given path do not exist, Helm will attempt to create them as it goes. If the given destination exists and there are files in that directory, conflicting files will be overwritten, but other files will be left alone.
 
 helm create NAME [flags]
@@ -167,16 +168,18 @@ or
 $ helm install --set name=prod myredis ./redis
 ```
 or
-
+```
 $ helm install --set-string long_int=1234567890 myredis ./redis
+```
 or
 ```
 $ helm install --set-file my_script=dothings.sh myredis ./redis
 ```
 or
 ```
-$ helm install --set-json 'master.sidecars=[{"name":"sidecar","image":"myImage","imagePullPolicy":"Always","ports":[{"name":"portname","containerPort"
+$ helm install --set-json 'master.sidecars=[{"name":"sidecar","image":"myImage","imagePullPolicy":"Always","ports":[{"name":"portname","containerPort" 
 ```
+
 ```
 auto-scaling (HPA, CAS)
    prometheus and grafana 
@@ -191,8 +194,9 @@ auto-scaling (HPA, CAS)
    resource limits 
    ingress
 ```
+
+Assigning Pods to Nodes 
 ```
-Assigning Pods to Nodes  
     nodeSelector 
     Node affinity
 Node isolation/restriction
